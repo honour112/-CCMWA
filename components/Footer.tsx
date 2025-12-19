@@ -43,18 +43,19 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <li><button onClick={() => onNavigate('home')} className="hover:text-gold transition-colors">Home</button></li>
               <li><button onClick={() => onNavigate('what-we-do')} className="hover:text-gold transition-colors">What We Do</button></li>
               <li><button onClick={() => onNavigate('about')} className="hover:text-gold transition-colors">Our Mission</button></li>
+              <li><button onClick={() => onNavigate('blog')} className="hover:text-gold transition-colors">Blog</button></li>
               <li><button onClick={() => onNavigate('partnerships')} className="hover:text-gold transition-colors">Church Partnerships</button></li>
               <li><button onClick={() => onNavigate('contact')} className="hover:text-gold transition-colors">Contact</button></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-bold mb-6 text-gold uppercase tracking-widest text-xs">Resources</h4>
+            <h4 className="font-bold mb-6 text-gold uppercase tracking-widest text-xs">Community</h4>
             <ul className="space-y-4 text-sm text-white/70">
+              <li><button onClick={() => onNavigate('resources')} className="hover:text-gold transition-colors">Resources</button></li>
+              <li><button onClick={() => onNavigate('membership')} className="hover:text-gold transition-colors">Membership</button></li>
               <li><button onClick={() => onNavigate('what-we-do')} className="hover:text-gold transition-colors">Soul Care</button></li>
               <li><button onClick={() => onNavigate('what-we-do')} className="hover:text-gold transition-colors">Hope Coaching</button></li>
-              <li><button onClick={() => onNavigate('partnerships')} className="hover:text-gold transition-colors">Leadership Training</button></li>
-              <li><button onClick={() => onNavigate('about')} className="hover:text-gold transition-colors">Mental Wellness Education</button></li>
             </ul>
           </div>
 

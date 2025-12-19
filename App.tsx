@@ -8,8 +8,11 @@ import ServicesPage from './pages/ServicesPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import PartnershipsPage from './pages/PartnershipsPage';
+import ResourcesPage from './pages/ResourcesPage';
+import MembershipPage from './pages/MembershipPage';
+import BlogPage from './pages/BlogPage';
 
-export type PageId = 'home' | 'what-we-do' | 'about' | 'contact' | 'partnerships';
+export type PageId = 'home' | 'what-we-do' | 'about' | 'contact' | 'partnerships' | 'resources' | 'membership' | 'blog';
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<PageId>('home');
@@ -31,6 +34,12 @@ const App: React.FC = () => {
         return <ContactPage />;
       case 'partnerships':
         return <PartnershipsPage />;
+      case 'resources':
+        return <ResourcesPage />;
+      case 'membership':
+        return <MembershipPage />;
+      case 'blog':
+        return <BlogPage />;
       default:
         return <Home onNavigate={navigateTo} />;
     }
